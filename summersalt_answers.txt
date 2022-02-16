@@ -1,0 +1,14 @@
+- I was running a little long trying to complete this exercise so I will give you the script I was able to complete within an hour. 
+- You can get a good idea of what my approach would be for the rest of the columns
+
+Followup questions:
+1. Depends on the how the data is sourced. In this case it is most likely survey data, so I would have the data updated similarily to how often the information is surveyed. With a lot of this data being about graduations it doesn't make sense to refresh the data a lot since it will realistically only change about 3 times per year.
+2. I'm not sure I understand the question.
+3. To simply check if we have duplicates:
+
+SELECT unique_ident, COUNT(unique_ident)
+FROM table_name
+GROUP BY unique_ident
+HAVING COUNT(unique_ident)>1
+
+4. I am not sure.
